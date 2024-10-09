@@ -1,8 +1,9 @@
-import Image from "next/image";
+import { Navbar } from "../components/navbar";
+import { Overview } from "../components/overview";
 
 export default function Home() {
-  return (
-    <div> creando un single page 
-    </div>
-  );
+  return <main className="px-3 lg:px-10">
+    <Navbar />
+    <Overview/>
+  </main>;
 }

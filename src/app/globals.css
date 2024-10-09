@@ -4,3 +4,15 @@
 html {
   scroll-behavior: smooth;
 }
+#inicio {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (min-with: 768px){
+  #inicio {
+    border-bottom-right-radius: 250px;
+  }
+}
