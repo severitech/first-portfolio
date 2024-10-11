@@ -21,29 +21,45 @@ export function Overview() {
             Totam fuga repellat beatae cupiditate perspiciatis ea sunt illum
             neque illo! Possimus, tempora?
           </p>
-          <div className=" flex justify-start gap-4 my-10">
+          <div className="flex justify-start gap-4 my-10">
             {dataSocialNetworks.map(({ id, icon, name, link }) => (
-              <Link href={link} key={id} target="_blank" rel="noreferrer">
-                <Image
-                  src={`/svg/${icon}.svg`}
-                  alt={name}
-                  width="40"
-                  height="40"
-                ></Image>
-              </Link>
+             
+                <Link
+                  href={link}
+                  key={id}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="relative group "
+                >
+                  <Image
+                    className={`transition-transform duration-300 ease-in-out hover:scale-110`}
+                    src={`/svg/${icon}.svg`}
+                    alt={name}
+                    width="40"
+                    height="40"
+                  />
+                  <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-30px] bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    {name}
+                  </span>
+                </Link>
             ))}
           </div>
+
           <div className="flex">
-            <button className="text-white bg-pink-400 px-8 mr-10 py-3 rounded-xl   hover:bg-pink-600">Empieza ya</button>
-            <button className="text-white border-2 px-8 mr-10 py-3 rounded-xl   hover:bg-white hover:text-pink-400 ">Cupon</button>
+            <button className="text-white bg-pink-400 px-8 mr-10 py-3 rounded-xl   hover:bg-pink-600">
+              Empieza ya
+            </button>
+            <button className="text-white border-2 px-8 mr-10 py-3 rounded-xl   hover:bg-white hover:text-pink-400 ">
+              Cupon
+            </button>
           </div>
         </div>
         <div className="grid justify-end">
           <Image
             src="/assets/overview.png"
             alt="overview"
-            width="250"
-            height="500"
+            width="300"
+            height="600"
           />
         </div>
       </div>
