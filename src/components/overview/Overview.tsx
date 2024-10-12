@@ -6,7 +6,7 @@ export function Overview() {
   return (
     <div
       id="inicio"
-      className="p-5 mt-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-purple-400 md:px-24 md:py-52"
+      className="p-5 mt-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-purple-400 md:px-24 md:py-52 shadow-gray-500 shadow-lg"
     >
       <div className=" items-center md:grid md:grid-cols-2">
         <div>
@@ -46,7 +46,7 @@ export function Overview() {
           </div>
 
           <div className="flex">
-            <button className="text-white bg-pink-400 px-8 mr-10 py-3 rounded-xl   hover:bg-pink-600">
+            <button className="text-white bg-pink-400 px-8 mr-10 py-3 rounded-xl   hover:bg-pink-500">
               Empieza ya
             </button>
             <button className="text-white border-2 px-8 mr-10 py-3 rounded-xl   hover:bg-white hover:text-pink-400 ">

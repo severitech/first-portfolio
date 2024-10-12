@@ -11,10 +11,12 @@ export function Navbar() {
         height="25"
         className="mx-auto md:mx-0"
       />
-      <div className="flex gap-4 text-center justify-end">
+      <div className="flex gap-6 text-center justify-end">
         <Link href="#inicio">Inicio</Link>
         <Link href="#capacidades">Capacidades</Link>
         <Link href="#sobremi">Sobre mi</Link>
+        <Link href="#practice">Practica</Link>
+        <Link href="#pricing">Planes</Link>
         <Link href="#contacto">Contacto</Link>
       </div>
     </div>

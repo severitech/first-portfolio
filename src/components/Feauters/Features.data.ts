@@ -2,7 +2,7 @@ export const dataFeauters = [
     {
         id: 1,
         image: "medal",
-        text: "Galardonados por otros clientes",
+        text: "Aprobado por otros clientes",
         additionalClass: "mt-0",
     }
     ,{
@@ -13,7 +13,7 @@ export const dataFeauters = [
     },{
         id: 3,
         image: "calendar",
-        text: "Plataforma automatica planificadora",
+        text: "Plataforma automatica Calendario",
         additionalClass: "mt-0",
     }
 ]
