@@ -11,13 +11,37 @@ export function Navbar() {
         height="25"
         className="mx-auto md:mx-0"
       />
-      <div className="flex gap-6 text-center justify-end">
-        <Link href="#inicio">Inicio</Link>
-        <Link href="#capacidades">Capacidades</Link>
-        <Link href="#sobremi">Sobre mi</Link>
-        <Link href="#practice">Practica</Link>
-        <Link href="#pricing">Planes</Link>
-        <Link href="#contacto">Contacto</Link>
+      <div className="flex gap-6 text-center justify-end  p-4">
+        <Link
+          href="#inicio"
+          className=" hover:text-gray-300 transition-colors duration-300"
+        >
+          Inicio
+        </Link>
+        <Link
+          href="#capacidades"
+          className=" hover:text-gray-300 transition-colors duration-300"
+        >
+          Capacidades
+        </Link>
+        <Link
+          href="#sobremi"
+          className=" hover:text-gray-300 transition-colors duration-300"
+        >
+          Sobre mí
+        </Link>
+        <Link
+          href="#practice"
+          className=" hover:text-gray-300 transition-colors duration-300"
+        >
+          Práctica
+        </Link>
+        <Link
+          href="#pricing"
+          className=" hover:text-gray-300 transition-colors duration-300"
+        >
+          Planes
+        </Link>
       </div>
     </div>
   );

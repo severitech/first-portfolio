@@ -6,18 +6,18 @@ export function Plans() {
   const [isMont, setIsMont] = useState(true);
 
   return (
-    <div className="py-20 md:py-56">
-      <h2 className="text-4xl font-extrabold text-center">
+    <div  className="py-20 md:py-56">
+      <h2 id="pricing" className="text-4xl font-extrabold text-center">
         Aqui tienes todos <br />
         <span className="text-pink-400"> nuestros planes</span>
       </h2>
-      <p className="max-w-lg mx-auto mt-10 text-center">
+      <p  className="max-w-lg mx-auto mt-10 text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
         atque similique corrupti ratione obcaecati vero hic dignissimos dicta
         porro, labore quas odit officiis nam, maxime aliquam, voluptatem dolores
         praesentium. Dolorem!
       </p>
-      <div className="grid items-center justify-center max-w-sm grid-cols-3 mx-auto my-10 overflow-hidden">
+      <div  className="grid items-center justify-center max-w-sm grid-cols-3 mx-auto my-10 overflow-hidden">
         <span className="text-xl font-bold text-center">Mensual</span>
         <div className="flex justify-center">
           <label className="relative inline-flex items-center mr-5 cursor-pointer">

@@ -5,7 +5,7 @@ import { PricesPlansProps } from "./PricesPlans.type";
 export function PricesPlans(props: PricesPlansProps) {
   const { isMontly } = props;
   return (
-    <div id="pricing" className="grid gap-10 my-5 md:grid-cols-3">
+    <div className="grid gap-10 my-5 md:grid-cols-3">
       {dataPricePlans.map(
         ({ id, name, description, primary, prices, features }) => (
           <MotionTransition key={id}>
@@ -32,8 +32,8 @@ export function PricesPlans(props: PricesPlansProps) {
                 <button
                   className={`px-8 py-3 rounded-xl ${
                     primary
-                      ? "border-2 border-pink-400 text-pink-400 bg-white hover:bg-pink-500 hover:text-white"
-                      : "text-white bg-pink-600 hover:bg-white hover:border-pink-500 hover:border-2 hover:text-pink-500"
+                      ? "border-2 border-pink-400 text-pink-400 bg-white hover:bg-pink-500 hover:text-white transition-colors duration-400"
+                      : "text-white bg-pink-600 hover:bg-white hover:border-pink-500 border-2 hover:text-pink-500 transition-colors duration-400"
                   }`}
                 >
                   Contratar Plan

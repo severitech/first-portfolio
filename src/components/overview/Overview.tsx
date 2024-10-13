@@ -1,6 +1,6 @@
 import { dataSocialNetworks } from "@/data/dataSocialNetWork";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Overview() {
   return (
@@ -38,7 +38,7 @@ export function Overview() {
                     width="40"
                     height="40"
                   />
-                  <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-30px] bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <span className={`absolute left-1/2 transform -translate-x-1/2 bottom-[-30px] bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-lg `}>
                     {name}
                   </span>
                 </Link>
@@ -46,15 +46,15 @@ export function Overview() {
           </div>
 
           <div className="flex">
-            <button className="text-white bg-pink-400 px-8 mr-10 py-3 rounded-xl   hover:bg-pink-500">
+            <button className="text-white bg-pink-400 px-8 mr-10 py-3 rounded-xl   hover:bg-pink-500 transition-colors duration-400">
               Empieza ya
             </button>
-            <button className="text-white border-2 px-8 mr-10 py-3 rounded-xl   hover:bg-white hover:text-pink-400 ">
+            <button className="text-white border-2 px-8 mr-10 py-3 rounded-xl   hover:bg-white hover:text-pink-400 transition-colors duration-400">
               Cupon
             </button>
           </div>
         </div>
-        <div className="grid justify-end">
+        <div className="grid justify-end md:mt-5">
           <Image
             src="/assets/overview.png"
             alt="overview"
