@@ -19,12 +19,12 @@ export const transitionMotion = {
 
 export function MotionTransition({ children }: { children: React.ReactNode }) {
   return (
-    <motion.div
+    <motion.section
       transition={transitionMotion.transition}
       initial={transitionMotion.initial}
       whileInView={transitionMotion.whileInView}
     >
       {children}
-    </motion.div>
+    </motion.section>
   );
 }

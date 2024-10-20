@@ -5,15 +5,15 @@ import { PricesPlansProps } from "./PricesPlans.type";
 export function PricesPlans(props: PricesPlansProps) {
   const { isMontly } = props;
   return (
-    <div className="grid gap-10 my-5 md:grid-cols-3">
+    <section className="grid gap-10 my-5 md:grid-cols-3">
       {dataPricePlans.map(
         ({ id, name, description, primary, prices, features }) => (
           <MotionTransition key={id}>
-            <div className="p-4 shadow-lg  rounded-xl shadow-pink-100">
+            <section className="p-4 shadow-lg  rounded-xl shadow-pink-100">
               <h4 className="mb-5 text-2xl font-bold text-center">{name}</h4>
               <p>{description}</p>
 
-              <div className="flex items-end justify-center my-7 ">
+              <section className="flex items-end justify-center my-7 ">
                 <span className="text-6xl font-black text-pink-600">
                   {isMontly ? prices[0].prices : prices[1].prices}
                 </span>
@@ -21,14 +21,14 @@ export function PricesPlans(props: PricesPlansProps) {
                 <span className="ml-3 text-xl font-extrabold text-slate-400">
                   {isMontly ? prices[0].name : prices[1].name}
                 </span>
-              </div>
+              </section>
               {features.map(({ id, name, active }) => (
-                <div key={id} className="flex justify-center my-4">
+                <section key={id} className="flex justify-center my-4">
                   {active ? <CheckIcon /> : <CloseIcon />}
                   <span className="ml-4"> {name}</span>
-                </div>
+                </section>
               ))}
-              <div className="my-6 text-center">
+              <section className="my-6 text-center">
                 <button
                   className={`px-8 py-3 rounded-xl ${
                     primary
@@ -38,12 +38,12 @@ export function PricesPlans(props: PricesPlansProps) {
                 >
                   Contratar Plan
                 </button>
-              </div>
-            </div>
+              </section>
+            </section>
           </MotionTransition>
         )
       )}
-    </div>
+    </section>
   );
 }
 

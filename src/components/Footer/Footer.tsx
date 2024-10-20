@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="p-5 pt-10 text-white bg-blue-950 md:px-20 md:py-10">
-      <div className="grid md:grid-cols-[450px_1fr_1fr_1fr] md:gap-10">
+    <footer className="p-5 pt-10 text-white bg-blue-950 md:px-20 md:py-10">
+      <section className="grid md:grid-cols-[450px_1fr_1fr_1fr] md:gap-10">
         <div>
           <Image
             src="/assets/logo.png"
@@ -49,7 +49,7 @@ export function Footer() {
             ))}
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   );
 }
